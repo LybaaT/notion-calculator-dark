@@ -10,15 +10,49 @@
         body {
             margin: 0;
             padding: 0;
+            
         }
         .container {
             text-align: center;
-            width: 30vw;
-            background-color: #191919;
-            height: 40vh;
+            width: 35vw;
+            background-color: #141414;
+            height: 60vh;
+            resize: both;
+        }
+        .col-md-3 {
+            padding: 0;
+        }
+        .col-md-6 {
+            padding: 0;
+        }
+        .textview {
+            padding: 0;
+            height: 10vh;
+            font-size: 25px;
+            color: #519b70;
+            background-color: #141414;
+            border: none;
         }
         .btns {
-            background-color: white;
+            background-color: #191919;
+            box-sizing: border-box;
+            border: none;
+            color: #519b70;
+            font-size: 25px;
+            cursor: pointer;
+            margin: 0;
+            min-height: 50px;
+            outline: none;
+            overflow: hidden;
+            padding: 9px 20px 8px;
+            text-align: center;
+            user-select: none;
+            transition: 0.1s ease-in;
+        }
+        .btns:hover, .btns:focus {
+            background-color: rgb(19, 19, 19) ;
+        }
+        .col-md-12 {
             padding: 0;
         }
     </style>
@@ -26,9 +60,11 @@
 <body>
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
             <form name="calc">
-                <input class="textview" name="textview">
+                <input class="textview w-100" name="textview">
             </form>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -56,46 +92,46 @@
 
         <div class="row">
             <div class="col-md-3">
-                <input class="btns w-100" type="button" value="4" onclick="insert(4)">
+                <button class="btns w-100" onclick="insert(4)">4</button>
             </div>
             <div class="col-md-3">
-                <input class="btns w-100" type="button" value="5" onclick="insert(5)">
+                <button class="btns w-100" onclick="insert(5)">5</button>
             </div>
             <div class="col-md-3">
-                <input class="btns w-100" type="button" value="6" onclick="insert(6)">
+                <button class="btns w-100"onclick="insert(6)">6</button>
             </div>
             <div class="col-md-3">
-                <input class="btns w-100" type="button" value="+" onclick="insert('+')">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3">
-                <input class="btns w-100" type="button" value="1" onclick="insert(1)">
-            </div>
-            <div class="col-md-3">
-                <input class="btns w-100" type="button" value="2" onclick="insert(2)">
-            </div>
-            <div class="col-md-3">
-                <input class="btns w-100" type="button" value="3" onclick="insert(3)">
-            </div>
-            <div class="col-md-3">
-                <input class="btns w-100" type="button" value="x" onclick="insert('*')"></td>
+                <button class="btns w-100"onclick="insert('+')">+</button>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-3">
-                <input class="btns w-100" type="button" value="." onclick="insert('.')">
+                <button class="btns w-100" onclick="insert(1)">1</button>
             </div>
             <div class="col-md-3">
-                <input class="btns w-100" type="button" value="0" onclick="insert(0)">
+                <button class="btns w-100" onclick="insert(2)">2</button>
             </div>
             <div class="col-md-3">
-                <input class="btns w-100" type="button" value="=" onclick="equal()">
+                <button class="btns w-100" onclick="insert(3)">3</button>
             </div>
             <div class="col-md-3">
-                <input class="btns w-100" type="button" value="/" onclick="insert('/')"></td>
+                <button class="btns w-100" onclick="insert('*')">x</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <button class="btns w-100" onclick="insert('.')">.</button>
+            </div>
+            <div class="col-md-3">
+                <button class="btns w-100" onclick="insert(0)">0</button>
+            </div>
+            <div class="col-md-3">
+                <button class="btns w-100" onclick="equal()">=</button>
+            </div>
+            <div class="col-md-3">
+                <button class="btns w-100" onclick="insert('/')">/</button>
             </div>
         </div>
     </div>
