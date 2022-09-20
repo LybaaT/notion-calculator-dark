@@ -19,12 +19,6 @@
             background-color: #141414;
             border:#151515 solid 1px;
         }
-        .col-md-3 {
-            padding: 0;
-        }
-        .col-md-6 {
-            padding: 0;
-        }
         .textview {
             padding: 10px;
             height: 19vh;
@@ -50,85 +44,82 @@
         .btns:hover, .btns:focus {
             background-color: rgb(19, 19, 19) ;
         }
-        .col-md-12 {
-            padding: 0;
-        }
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12 p-0">
             <form name="calc">
                 <input class="textview w-100" readonly name="textview">
             </form>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-xs-2 col-6 p-0">
                 <button class="btns w-100" onclick="back()">Back</button>
             </div>
-            <div class="col-md-6">
+            <div class="col-xs-2 col-6 p-0">
                 <button class="btns w-100" onclick="clean()">Clear</button>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert(7)">7</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert(8)">8</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert(9)">9</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert('-')">-</button>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert(4)">4</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert(5)">5</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100"onclick="insert(6)">6</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100"onclick="insert('+')">+</button>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert(1)">1</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert(2)">2</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert(3)">3</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert('*')">x</button>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert('.')">.</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert(0)">0</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="equal()">=</button>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-2 col-3 p-0">
                 <button class="btns w-100" onclick="insert('/')">/</button>
             </div>
         </div>
